@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Dreamers | Твої Ігри</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0d1a26; 
+            color: #e6f7ff; 
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; 
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a334d;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #80c0ff; 
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #80c0ff; 
+        }
+
+        section {
+            padding: 80px 5%;
+            text-align: center;
+            min-height: 60vh; 
+        }
+
+        h2 {
+            color: #00e699; 
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #00e699;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+             color: #80c0ff;
+        }
+
+        #home {
+            background: linear-gradient(rgba(13, 26, 38, 0.7), rgba(13, 26, 38, 0.9)), url('https://picsum.photos/1600/900?grayscale') center/cover; /* Тут має бути ваше зображення ігор */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #home h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(0, 230, 153, 0.8);
+        }
+        
+        .slogan {
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #00e699; 
+            color: #0d1a26;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #00cc88;
+            transform: scale(1.05);
+        }
+
+        .game-card {
+            background-color: #1a334d;
+            border: 2px solid #80c0ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 350px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(128, 192, 255, 0.3);
+        }
+
+        .game-card p {
+            font-size: 0.9em;
+            color: #b3cddf;
+        }
+
+        #contact {
+            background-color: #0b151e;
+        }
+
+        .contact-info a {
+            color: #00e699;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #1a334d;
+            color: #80c0ff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Головна</a>
+            <a href="#games">Ігри</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Pixel Dreamers</h1>
+        <p class="slogan">Ми створюємо світи, в які хочеться повернутися.</p>
+        <p>Привіт, геймере! Ми — невелика команда розробників, які фанатично люблять ігри. Наша місія: дарувати незабутні емоції та створювати ігровий досвід, який чіпляє.</p>
+        <br>
+        <a href="#games" class="btn">Ознайомитися з іграми →</a>
+    </section>
+
+    <section id="games">
+        <h2>🕹️ Наші Проєкти</h2>
+        <p style="margin-bottom: 50px;">Грати — це серйозно. Від захоплюючих мобільних раннерів до атмосферних інді-RPG.</p>
+        
+        <div class="game-card">
+            <h3>Cosmic Runner</h3>
+            <p>Жанр: Аркадний Раннер</p>
+            <p>Платформи: iOS, Android</p>
+            <hr style="border-color: #00e699;">
+            <p>Швидкий, кольоровий та динамічний. Збери всі кристали, ухиляючись від чорних дір. Ідеально для коротких сесій!</p>
+        </div>
+
+        <div class="game-card">
+            <h3>The Lost Scroll</h3>
+            <p>Жанр: Інді RPG</p>
+            <p>Платформи: PC (Steam)</p>
+            <hr style="border-color: #00e699;">
+            <p>Атмосферна пригода, де твій вибір змінює світ. 100+ годин сюжету та магії. Критики в захваті!</p>
+        </div>
+        
+        <div class="game-card">
+            <h3>Project V (В розробці)</h3>
+            <p>Жанр: Стратегія</p>
+            <p>Платформи: Mobile</p>
+            <hr style="border-color: #00e699;">
+            <p>Наш наступний великий проєкт: керування колонією на далекій планеті. Незабаром буде доступний бета-тест!</p>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>✉️ Зв'язок</h2>
+        <p>Ми завжди відкриті для співпраці, фідбеку та обговорення нових ідей.</p>
+        
+        <div class="contact-info">
+            <p><strong>Email для співпраці:</strong> <a href="mailto:text@pixeldreamers">text@pixeldreamers</a></p>
+            <p><strong>Служба підтримки:</strong> <a href="mailto:support@pixeldreamers">support@pixeldreamers</a></p>
+            <p><strong>Соцмережі:</strong> <a href="#">X/Twitter</a> | <a href="#">Discord-сервер</a></p>
+        </div>
+        
+        <br>
+        <p>Чи хочете першим дізнатися про вихід Project V? Підписуйтесь на наші новини!</p>
+        <a href="mailto:hi@pixeldreamers?subject=Підписка на новини" class="btn">Отримати новини</a>
+    </section>
+
+</body>
+</html>
